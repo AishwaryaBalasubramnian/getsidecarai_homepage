@@ -20,9 +20,10 @@
                 <span class="logo-text">SidecarAI</span>
             </div>
             <ul class="nav-links"> 
-                <li><a href="#rolo">Rolo Scan</a></li>      
+                <!-- Nav links centered if needed -->      
             </ul>
             <div class="nav-cta">
+                <a href="https://getsidecarai.com/" class="btn btn-roloscan">Rolo Scan</a>
                 <a href="#" class="btn btn-ghost">Join Beta</a>
                 <a href="#" class="btn btn-primary">Invest</a>
             </div>
@@ -34,7 +35,7 @@
             <ul>
                 <li><a href="#what-is" class="mobile-link">What Is Sidecar?</a></li>
                 <li><a href="#problem" class="mobile-link">The Problem</a></li>
-                <li><a href="#platform" class="mobile-link">Platform</a></li>
+                <li><a href="#platform" class="mobile-link btn btn-roloscan" style="width:100%; justify-content:center;">Rolo Scan</a></li>
                 <li><a href="#rolo" class="mobile-link">Meet Rolo</a></li>
                 <li><a href="#founder" class="mobile-link">Founder</a></li>
             </ul>
@@ -247,22 +248,7 @@
                     <div class="phone-player-wrap">
                         <div class="phone-player">
                             <div class="phone-frame">
-                                <video id="feature-video" autoplay muted playsinline class="showcase-video">
-                                    <source src="signup for mobile.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="player-controls">
-                                <button class="player-btn prev" id="prev-feat">←</button>
-                                <div class="player-dots" id="player-dots">
-                                    <span class="dot active" data-index="0"></span>
-                                    <span class="dot" data-index="1"></span>
-                                    <span class="dot" data-index="2"></span>
-                                    <span class="dot" data-index="3"></span>
-                                    <span class="dot" data-index="4"></span>
-                                    <span class="dot" data-index="5"></span>
-                                    <span class="dot" data-index="6"></span>
-                                </div>
-                                <button class="player-btn next" id="next-feat">→</button>
+                                <img src="roloscan-app-demo.gif" alt="RoloScan App Demo" class="showcase-video">
                             </div>
                         </div>
                     </div>
@@ -271,70 +257,7 @@
         </div>
     </section>
 
-    <script>
-        const features = [
-            { src: 'signup for mobile.mp4', title: 'Simple Signup', desc: 'Get started in seconds with our streamlined onboarding.', badge: 'Onboarding' },
-            { src: 'login for mobile.mp4', title: 'Secure Login', desc: 'Access your account safely and quickly.', badge: 'Onboarding' },
-            { src: 'forgot password for mobile.mp4', title: 'Easy Recovery', desc: 'Secure password reset whenever you need it.', badge: 'Onboarding' },
-            { src: 'Profile settings for mobile.mp4', title: 'Personal Settings', desc: 'Customize SidecarAI to match your professional workflow.', badge: 'Setup' },
-            { src: 'Contact Creation for mobile.mp4', title: 'Smart Contacts', desc: 'Automated retrieval and enrichment of your networking leads.', badge: 'Core Feature' },
-            { src: 'Activity craetion for mobile.mp4', title: 'Activity Tracking', desc: 'Capture every conversation context on the go.', badge: 'Core Feature' },
-            { src: 'Team management for mobile.mp4', title: 'Team Collaboration', desc: 'Scale relationship intelligence across your entire organization.', badge: 'Scale' }
-        ];
 
-        let currentIndex = 0;
-        const video = document.getElementById('feature-video');
-        const title = document.getElementById('feat-title');
-        const desc = document.getElementById('feat-desc');
-        const badge = document.getElementById('feat-badge');
-        const dots = document.querySelectorAll('.dot');
-
-        function updateFeature(index) {
-            // Apply fade-out
-            video.classList.add('fade-out');
-            
-            setTimeout(() => {
-                currentIndex = index;
-                const feat = features[currentIndex];
-                
-                // Update Content
-                video.src = feat.src;
-                
-                // Update Dots
-                dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
-                
-                // Fade back in
-                video.load();
-                video.oncanplay = () => {
-                    video.classList.remove('fade-out');
-                    video.play();
-                    // Update text only after fade out to ensure sync
-                    title.textContent = feat.title;
-                    desc.textContent = feat.desc;
-                    badge.textContent = feat.badge;
-                };
-            }, 400); // Match CSS transition time
-        }
-
-        document.getElementById('next-feat').addEventListener('click', () => {
-            updateFeature((currentIndex + 1) % features.length);
-        });
-
-        document.getElementById('prev-feat').addEventListener('click', () => {
-            updateFeature((currentIndex - 1 + features.length) % features.length);
-        });
-
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                updateFeature(parseInt(dot.dataset.index));
-            });
-        });
-
-        // Auto-cycle when video ends
-        video.onended = () => {
-            updateFeature((currentIndex + 1) % features.length);
-        };
-    </script>
 
     <!-- ===== MEET ROLO ===== -->
     <section id="rolo" class="section-dark">
