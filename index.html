@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SidecarAI | Your Relationship Intelligence Platform</title>
+    <meta name="description" content="SidecarAI is a relationship intelligence platform that captures context, automates follow-ups, and turns conversations into growth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header id="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="roloscan-logo.png" alt="SidecarAI" class="logo-img">
+                <span class="logo-text">SidecarAI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#what-is">What Is Sidecar?</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#rolo">Meet Rolo</a></li>
+                <li><a href="#founder">Founder</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#" class="btn btn-ghost">Request a Demo</a>
+                <a href="#" class="btn btn-primary">Contact for Pricing</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#what-is" class="mobile-link">What Is Sidecar?</a></li>
+                <li><a href="#problem" class="mobile-link">The Problem</a></li>
+                <li><a href="#platform" class="mobile-link">Platform</a></li>
+                <li><a href="#rolo" class="mobile-link">Meet Rolo</a></li>
+                <li><a href="#founder" class="mobile-link">Founder</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary" style="width:100%;text-align:center;margin-top:1.5rem;">Contact for Pricing</a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge fade-in-up" style="animation-delay:0s;">
+                    <span class="badge-dot"></span>
+                    Relationship Intelligence Platform
+                </div>
+                <h1 class="fade-in-up" style="animation-delay:0.1s;">
+                    SidecarAI: Your<br>
+                    <span class="gradient-text">Relationship Intelligence<br>Platform</span>
+                </h1>
+                <p class="hero-sub fade-in-up" style="animation-delay:0.2s;">
+                    The assistant riding beside you while you drive is what matters.
+                </p>
+                <p class="hero-desc fade-in-up" style="animation-delay:0.25s;">
+                    SidecarAI strengthens follow-through, preserves context, and transforms conversations into measurable growth.
+                </p>
+                <div class="hero-btns fade-in-up" style="animation-delay:0.3s;">
+                    <a href="#" class="btn btn-primary btn-lg btn-glow">
+                        <span>Contact for Pricing</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#" class="btn btn-outline-white btn-lg">Request a Demo</a>
+                    <a href="#" class="btn btn-ghost-hero">Reach out about Partnerships ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in-right">
+                <div class="app-mockup">
+                    <div class="app-card-glow"></div>
+                    <div class="app-topbar">
+                        <div class="app-dots"><span></span><span></span><span></span></div>
+                        <div class="app-title">SidecarAI</div>
+                    </div>
+                    <div class="app-inner">
+                        <div class="app-contact-row">
+                            <div class="app-avatar av-1">JD</div>
+                            <div class="app-contact-info">
+                                <div class="app-contact-name">Jonathan Davis</div>
+                                <div class="app-contact-tag tag-blue">Follow up — Overdue</div>
+                            </div>
+                            <div class="app-score">97</div>
+                        </div>
+                        <div class="app-contact-row">
+                            <div class="app-avatar av-2">SR</div>
+                            <div class="app-contact-info">
+                                <div class="app-contact-name">Sarah Richards</div>
+                                <div class="app-contact-tag tag-green">Context Retrieved ✓</div>
+                            </div>
+                            <div class="app-score">88</div>
+                        </div>
+                        <div class="app-contact-row">
+                            <div class="app-avatar av-3">ML</div>
+                            <div class="app-contact-info">
+                                <div class="app-contact-name">Marcus Lee</div>
+                                <div class="app-contact-tag tag-amber">Intro Pending</div>
+                            </div>
+                            <div class="app-score">74</div>
+                        </div>
+                        <div class="app-ai-bar">
+                            <div class="ai-bar-icon">🐾</div>
+                            <div class="ai-bar-text">
+                                <span class="ai-bar-label">Rolo suggests:</span>
+                                <span class="ai-bar-msg">Follow up with Jonathan before Thursday's conference...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-bubble float-bubble-1">
+                        <div class="float-icon">🔗</div>
+                        <div>
+                            <div class="float-main">RoloScan</div>
+                            <div class="float-sub">Card scanned ✓</div>
+                        </div>
+                    </div>
+                    <div class="float-bubble float-bubble-2">
+                        <div class="float-icon">⚡</div>
+                        <div>
+                            <div class="float-main">AI Insight</div>
+                            <div class="float-sub">3 signals found</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHAT IS SIDECAR? ===== -->
+    <section id="what-is" class="section-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-tag">Our Mission</div>
+                <h2>What Is Sidecar?</h2>
+            </div>
+            <div class="sidecar-story reveal">
+                <div class="story-lead">
+                    <p>A sidecar doesn't drive the motorcycle.</p>
+                    <p>It rides beside it.</p>
+                    <p>Steady. Supportive. Integrated.</p>
+                    <p>That's how we see AI.</p>
+                </div>
+                <div class="story-body">
+                    <p>Sidecar AI is not meant to replace you. It's built to ride alongside you — capturing context, retrieving insight, and reducing administrative friction so you can focus on what truly drives growth: relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== THE TRUTH ABOUT GROWTH ===== -->
+    <section id="problem" class="section-dark">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-tag tag-light">The Reality</div>
+                <h2 class="text-light">The Truth About Growth</h2>
+            </div>
+            <div class="problem-grid reveal">
+                <div class="problem-text">
+                    <p>Most opportunities aren't lost at first contact. They're lost between contact and follow-through.</p>
+                    <p>A conversation happens. Contact information is collected — a business card, a LinkedIn connection, a conference badge, a warm introduction.</p>
+                    <p><strong style="color:var(--gold-400);">And then:</strong></p>
+                    <ul class="problem-list">
+                        <li><span class="problem-icon">📝</span> Notes get buried.</li>
+                        <li><span class="problem-icon">💨</span> Context fades.</li>
+                        <li><span class="problem-icon">⏳</span> Follow-ups stall.</li>
+                        <li><span class="problem-icon">⚠️</span> Outstanding tasks slip through the cracks.</li>
+                    </ul>
+                    <p class="problem-note">Not because professionals don't care. Because the systems meant to support them weren't built to work together.</p>
+                </div>
+                <div class="problem-fragmentation">
+                    <div class="fragmentation-header">
+                        <h3>The Problem Isn't Effort.<br>It's <span class="gradient-text">Fragmentation.</span></h3>
+                        <p>To approximate a true relationship intelligence system, professionals are forced to combine:</p>
+                    </div>
+                    <div class="tool-grid">
+                        <div class="tool-chip"><span class="chip-icon">📊</span>A CRM</div>
+                        <div class="tool-chip"><span class="chip-icon">📇</span>A digital Rolodex</div>
+                        <div class="tool-chip"><span class="chip-icon">📅</span>A calendar integration</div>
+                        <div class="tool-chip"><span class="chip-icon">✍️</span>An AI email drafting tool</div>
+                        <div class="tool-chip"><span class="chip-icon">✅</span>A task manager</div>
+                        <div class="tool-chip"><span class="chip-icon">🔔</span>A reminder system for outstanding items</div>
+                        <div class="tool-chip"><span class="chip-icon">📬</span>A way to track who hasn't responded to follow-up</div>
+                    </div>
+                    <div class="fragmentation-callout">
+                        <p>Multiple dashboards. Multiple logins. Multiple subscriptions. <strong>Still no unified intelligence layer.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== THE SIDECARAI PLATFORM ===== -->
+    <section id="platform" class="section-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-tag">The Solution</div>
+                <h2>The SidecarAI Platform</h2>
+                <p class="section-sub">SidecarAI is the intelligence layer that connects conversation to systems. We sit between the handshake and the CRM.</p>
+            </div>
+            <div class="platform-pillars reveal">
+                <div class="pillar-card">
+                    <div class="pillar-number">01</div>
+                    <div class="pillar-icon">🔍</div>
+                    <h4>We preserve context.</h4>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-number">02</div>
+                    <div class="pillar-icon">📡</div>
+                    <h4>We surface follow-up signals.</h4>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-number">03</div>
+                    <div class="pillar-icon">⚙️</div>
+                    <h4>We reduce manual entry.</h4>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-number">04</div>
+                    <div class="pillar-icon">💡</div>
+                    <h4>We retrieve insight when you need it.</h4>
+                </div>
+            </div>
+            <p class="platform-closing reveal text-center">SidecarAI is the platform. RoloScan is our flagship entry point.</p>
+
+            <!-- RoloScan -->
+            <div class="roloscan-feature reveal">
+                <div class="roloscan-left">
+                    <div class="section-tag" style="margin-bottom:1.2rem;">Flagship Entry Point</div>
+                    <h2>RoloScan</h2>
+                    <p>RoloScan is the capture layer of SidecarAI. It ensures that the first moment of connection — whether through a badge, a card, a QR code, or a LinkedIn exchange — becomes structured, enriched, and actionable.</p>
+                    <p>RoloScan feeds SidecarAI's intelligence engine. Because the first handshake should be the beginning of a well-managed relationship.</p>
+                    <div class="roloscan-chips">
+                        <span class="rs-chip">📸 Scan Business Cards</span>
+                        <span class="rs-chip">🔗 LinkedIn Exchange</span>
+                        <span class="rs-chip">🏷️ Badge Scanning</span>
+                        <span class="rs-chip">📱 QR Code</span>
+                    </div>
+                </div>
+                <div class="roloscan-right">
+                    <div class="roloscan-logo-wrap">
+                        <img src="roloscan-logo.png" alt="RoloScan Logo" class="roloscan-img">
+                        <div class="roloscan-glow"></div>
+                    </div>
+                    <div class="roloscan-flow">
+                        <div class="flow-step">
+                            <div class="flow-num">1</div>
+                            <span>Scan any contact source</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="flow-num">2</div>
+                            <span>AI enriches &amp; structures</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <div class="flow-num">3</div>
+                            <span>Synced to your CRM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MEET ROLO ===== -->
+    <section id="rolo" class="section-dark">
+        <div class="container">
+            <div class="rolo-grid reveal">
+                <div class="rolo-left">
+                    <div class="rolo-mascot-wrap">
+                        <div class="rolo-ring rolo-ring-1"></div>
+                        <div class="rolo-ring rolo-ring-2"></div>
+                        <img src="roloscan-logo.png" alt="Rolo" class="rolo-dog-img">
+                        <div class="rolo-badge-cro">C.R.O</div>
+                    </div>
+                    <div class="rolo-retrieve-list">
+                        <div class="retrieve-item"><span class="ri-icon">💬</span>Conversation context</div>
+                        <div class="retrieve-item"><span class="ri-icon">🎯</span>Intent signals</div>
+                        <div class="retrieve-item"><span class="ri-icon">📆</span>Calendar alignment</div>
+                        <div class="retrieve-item"><span class="ri-icon">⏰</span>Follow-up timing</div>
+                        <div class="retrieve-item"><span class="ri-icon">🕰️</span>Relationship history</div>
+                        <div class="retrieve-item"><span class="ri-icon">📌</span>Outstanding items</div>
+                        <div class="retrieve-item"><span class="ri-icon">📨</span>Missed responses</div>
+                    </div>
+                </div>
+                <div class="rolo-right">
+                    <div class="section-tag tag-light">Chief Retrieval Officer</div>
+                    <h2 class="text-light">Meet Rolo</h2>
+                    <p class="text-muted">Rolo is the intelligence engine behind SidecarAI. Inspired by a golden retriever — loyal, attentive, and remarkably good at bringing things back when called — Rolo retrieves the items listed alongside.</p>
+                    <blockquote class="rolo-quote">
+                        "He doesn't just store information. He retrieves what matters. Quietly. Reliably. Precisely."
+                    </blockquote>
+                    <div class="rolo-traits">
+                        <div class="trait-card">
+                            <div class="trait-icon">🐾</div>
+                            <div>
+                                <div class="trait-title">Loyal</div>
+                                <div class="trait-desc">Always by your side, never distracting</div>
+                            </div>
+                        </div>
+                        <div class="trait-card">
+                            <div class="trait-icon">👁️</div>
+                            <div>
+                                <div class="trait-title">Attentive</div>
+                                <div class="trait-desc">Watches signals you might miss</div>
+                            </div>
+                        </div>
+                        <div class="trait-card">
+                            <div class="trait-icon">🎯</div>
+                            <div>
+                                <div class="trait-title">Precise</div>
+                                <div class="trait-desc">Retrieves exactly what matters</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR BELIEF ===== -->
+    <section class="section-purple-soft">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="section-tag">Core Values</div>
+                <h2>Our Belief</h2>
+            </div>
+            <div class="belief-grid reveal">
+                <div class="belief-card">
+                    <div class="belief-icon">🏗️</div>
+                    <p>Relationships are the real infrastructure of business.</p>
+                </div>
+                <div class="belief-card belief-card-accent">
+                    <div class="belief-icon">🏆</div>
+                    <p>Follow-through is a competitive advantage.</p>
+                </div>
+                <div class="belief-card">
+                    <div class="belief-icon">🤖</div>
+                    <p>AI should work beside you — not in front of you.</p>
+                </div>
+                <div class="belief-card belief-card-accent">
+                    <div class="belief-icon">🚀</div>
+                    <p>SidecarAI exists to strengthen what drives growth, without increasing complexity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOUNDER ===== -->
+    <section id="founder" class="section-light">
+        <div class="container">
+            <div class="founder-layout reveal">
+                <div class="founder-left">
+                    <div class="section-tag">Our Story</div>
+                    <h2>Founder</h2>
+                    <div class="founder-tag">
+                        <span class="founder-badge">♀ Female-Founded</span>
+                    </div>
+                    <p>SidecarAI is proudly female-founded. The company was born from lived frustration — not theory. After years of managing high-volume relationships across complex environments, the founder found herself buried under administrative overhead.</p>
+                    <p>She went looking for a solution. What she found instead was a patchwork. To build the system she needed, she would have required:</p>
+                    <ul class="founder-list">
+                        <li>A CRM</li>
+                        <li>A digital Rolodex</li>
+                        <li>A calendar integration</li>
+                        <li>An AI email drafting tool</li>
+                        <li>A task manager</li>
+                        <li>A follow-up tracking system</li>
+                        <li>A reminder engine for outstanding items</li>
+                        <li>A way to see who hadn't responded to outreach</li>
+                    </ul>
+                    <p>Five to eight separate tools. Over $500 per month in subscriptions. Still fragmented.</p>
+                    <blockquote class="founder-quote">
+                        "She used to joke that she wished she were important enough to have an executive assistant. What she really wanted wasn't a person. She wanted a system that worked like one."
+                    </blockquote>
+                    <p>A platform that:</p>
+                    <ul class="founder-list">
+                        <li>Lived inside her workflow</li>
+                        <li>Connected to the systems she already used</li>
+                        <li>Captured context automatically</li>
+                        <li>Retrieved information instantly</li>
+                        <li>Strengthened follow-through without creating new friction</li>
+                    </ul>
+                    <p>She built it when she was unable to locate it. Built by a leader with experience spanning healthcare, enterprise systems, and high-growth environments, Sidecar AI reflects a deep understanding of how relationships drive meaningful outcomes.</p>
+                </div>
+                <div class="founder-right">
+                    <div class="founder-visual">
+                        <div class="founder-card-bg"></div>
+                        <div class="founder-stat-stack">
+                            <div class="fstat">
+                                <span class="fstat-num" data-target="8">0</span><span class="fstat-suf">-tool</span>
+                                <div class="fstat-label">patchwork she replaced</div>
+                            </div>
+                            <div class="fstat fstat-accent">
+                                <span>$</span><span class="fstat-num" data-target="500">0</span><span class="fstat-suf">+/mo</span>
+                                <div class="fstat-label">in subscriptions eliminated</div>
+                            </div>
+                            <div class="fstat">
+                                <span class="fstat-num" data-target="1">0</span><span class="fstat-suf"> platform</span>
+                                <div class="fstat-label">unified intelligence layer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="section-final-cta">
+        <div class="final-cta-glow-1"></div>
+        <div class="final-cta-glow-2"></div>
+        <div class="container text-center reveal">
+            <div class="section-tag tag-light">Get Started</div>
+            <h2 class="text-light">Drive what matters.<br><span class="gradient-text-gold">Let Sidecar ride beside you.</span></h2>
+            <div class="cta-btns">
+                <a href="#" class="btn btn-primary btn-lg btn-glow">
+                    <span>Contact for Organizational Pricing</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#" class="btn btn-outline-white btn-lg">Schedule a Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+       
+        <div class="footer-bottom">
+            
+                <p>&copy; 2026 SidecarAI. Relationship Intelligence Platform. All rights reserved.</p>
+          
+        </div>
+    </footer>
+
+    <script>
+        // Sticky Header
+        const header = document.getElementById('site-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                menuBtn.classList.remove('active');
+            });
+        });
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            menuBtn.classList.toggle('active');
+        });
+
+        // Scroll Reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Counter Animation
+        function animateCounter(el, target) {
+            const duration = 2000;
+            const start = performance.now();
+            const update = (now) => {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(eased * target);
+                if (progress < 1) requestAnimationFrame(update);
+                else el.textContent = target;
+            };
+            requestAnimationFrame(update);
+        }
+        const counterObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    animateCounter(el, parseInt(el.getAttribute('data-target')));
+                    counterObs.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', e => {
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+    </script>
+</body>
+</html>
